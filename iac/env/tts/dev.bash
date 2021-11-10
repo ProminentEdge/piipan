@@ -13,7 +13,7 @@ RESOURCE_GROUP=rg-core-$ENV
 MATCH_RESOURCE_GROUP=rg-match-$ENV
 
 # Prefix for resource identifiers
-PREFIX=tts
+PREFIX=ttspe
 
 # Either AzureCloud or AzureUSGovernment
 CLOUD_NAME=AzureCloud

@@ -50,7 +50,7 @@ main () {
   az ad sp create-for-rbac \
     --name "$name" \
     --role Contributor \
-    --scopes "$SCOPES" \
+    --scopes $SCOPES \
     --only-show-errors \
     --output "$output"
 

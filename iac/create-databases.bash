@@ -38,6 +38,9 @@ EOF
 }
 
 config_db () {
+  echo "PGPASSWORD=$PGPASSWORD"
+  echo "db=$1"
+  echo "PSQL_OPTS=${PSQL_OPTS[@]}"
   db=$1
   psql "${PSQL_OPTS[@]}" -d "$db" -f - <<EOF
     REVOKE ALL ON DATABASE $db FROM public;

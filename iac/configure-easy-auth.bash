@@ -227,6 +227,9 @@ configure_easy_auth_pair () {
   local client_identity=$4
 
   local func_app_reg_id
+  echo "func=$func"
+  echo "role=$role"
+  echo "group=$group"
   func_app_reg_id=$(create_aad_app_reg "$func" "$role" "$group")
 
   # Wait a bit to prevent "service principal being created must in the local tenant" error
